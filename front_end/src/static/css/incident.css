@@ -1,0 +1,60 @@
+
+.incidents__container {
+    height: 36vh;
+    overflow-y: auto;
+}
+
+.incident {
+    display: grid;
+    grid-template-columns: 60px 1fr 20%;
+    margin-bottom: 1.4rem;
+    border-bottom: 2px black dotted;
+    padding: 1.4rem;
+    margin-right: 1rem;
+}
+
+.incident .profile__image {
+    width: 50px;
+    grid-row: 1 / 4;
+}
+
+.incident .incident__time {
+    color: var(--primary-color-light);
+    font-size: .8em;
+    font-weight: 500;
+}
+
+.incident .profile__username {
+    font-weight: 700;
+    margin-bottom: .2rem;
+}
+
+.incident .incident__message {
+    font-weight: 500;
+}
+
+.incident .not__cyberbullying__container {
+    grid-area: 1 / 3 / span 3 / span 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not__cyberbullying__container .not__cyberbullying {
+    padding: 12px 22px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.not__cyberbullying__container .not__cyberbullying:hover {
+    background-color: var(--primary-color-light);
+}
+
+.not__cyberbullying__container .not__cyberbullying:active {
+    background-color: var(--primary-color);
+}

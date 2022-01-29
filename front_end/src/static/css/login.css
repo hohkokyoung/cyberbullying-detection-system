@@ -1,0 +1,185 @@
+@import "constant.css";
+
+.login {
+    height: 100vh;
+    display: flex;
+    color: var(--primary-color);
+}
+
+.login__structure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.login__structure:nth-child(1) {
+    /* background-color: #5454DE; */
+    background: linear-gradient(0deg, var(--primary-background-color), 
+            var(--primary-background-color)), 
+            url(../media/images/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: var(--text-color);
+}
+
+.login__information {
+    width: 60%;
+    text-align: left;
+}
+
+.login__information .login__information__title img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+.login__information__title {
+    /* font-size: 2em; */
+    margin-bottom: .8rem;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.login__information__objective {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-bottom: 2.8rem;
+}
+
+.login__information__contacts {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.login__information__contacts a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.login__information__contacts a:hover {
+    color: var(--secondary-color-light);
+}
+
+.login__information__contacts a:active {
+    color: var(--info-color);
+}
+
+.login__title {
+    margin-bottom: 1.2em;
+}
+
+.login__fields {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.4rem;
+}
+
+.login__fields label {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info__icon {
+    width: 1rem;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.login__fields input {
+    font-size: 1em;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--primary-color);
+    outline: none;
+    margin-bottom: 2rem;
+    padding-bottom: 10px;
+}
+
+.field--input:focus {
+    border-color: var(--primary-color-light);
+}
+
+.login__fields input[type="submit"] {
+    margin: 0 auto;
+    border: 0;
+    font-size: 1.2em;
+    background-color: var(--primary-color);
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    width: 60%;
+    /* border-radius: 40px; */
+    outline: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.login__fields input[type="submit"]:hover {
+    background-color: var(--primary-color-light);
+}
+
+.login__fields input[type="submit"]:active {
+    background-color: var(--primary-color);
+}
+
+.tooltip {
+    position: relative;
+    /* visibility: hidden; */
+    /* display: inline-block; */
+    /* border-bottom: 1px dotted black; */
+  }
+  
+.tooltip .tooltiptext {
+    /* visibility: hidden; */
+    opacity: 0;
+    pointer-events: none;
+    width: 240px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: left;
+    border-radius: 6px;
+    padding: 8px 10px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -127px;
+    transition: opacity .5s ease-in;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.tooltip .tooltiptext li {
+    list-style: none;
+}
+  
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--primary-color) transparent transparent transparent;
+}
+   
+.tooltip:hover .tooltiptext {
+    opacity: 1 !important;
+    /* visibility: visible; */
+}
+
+.login__error {
+    color: var(--error-color);
+    /* visibility: hidden; */
+}

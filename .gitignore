@@ -1,0 +1,4 @@
+.env
+private_key.pem
+database.sql
+aes_key.txt

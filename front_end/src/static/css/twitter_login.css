@@ -1,0 +1,80 @@
+.twitter__login__modal {
+    display: flex;
+    /* display: none; */
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.twitter__login__background {
+    background-color: white;
+    margin: auto;
+    padding: 2vw;
+    /* border: 1px solid #888; */
+    width: 35%;
+    height: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* background-color: var(--low-toxicity-color); */
+}
+
+.twitter__login__background > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.twitter__login__background h2 {
+    font-size: 1.3em;
+}
+
+.twitter__login__background p {
+    font-size: 1;
+    font-weight: 600;
+    line-height: 1.6rem;
+}
+
+.twitter__login__background > div div:nth-child(3) {
+    display: flex;
+    /* margin-left: auto; */
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.twitter__login__background > div div:nth-child(3) div {
+    display: flex;
+}
+
+.twitter__login__background > div div:nth-child(3) div input {
+    border: 0;
+    border-bottom: 2px solid var(--primary-color);
+    outline: none;
+    padding-bottom: 5px;
+    font-size: 1em;
+    width: 40%;
+}
+
+.twitter__login__background > div div:nth-child(3) div:nth-child(1) {
+    gap: 1rem;
+    align-items: center;
+}
+
+.twitter__login__background > div div:nth-child(3) div:nth-child(1) p {
+    font-size: 1.1em;
+}
+
+.twitter__login__background > div div:nth-child(3) div:nth-child(2) {
+    gap: 2rem;
+}
+
+/* .twitter__login__background a {
+    text-align: center;
+} */

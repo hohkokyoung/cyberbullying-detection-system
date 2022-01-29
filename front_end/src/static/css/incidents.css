@@ -1,0 +1,55 @@
+@import './constant.css';
+
+.incidents__header {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.incidents__header h2 {
+    font-size: 1.3em;
+}
+
+.incidents__header .filter__type {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.incidents__header .filter__type div {
+    display: flex;
+    /* align-items: center; */
+}
+
+.incidents__header .filter__type div p {
+    /* align-items: center; */
+    margin-left: .6rem;
+}
+
+.incidents__header .filter__type button {
+    border: 0;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    /* padding: 0 .4rem; */
+}
+
+.incidents__header .filter__type .filter__tab:nth-child(2) {
+    margin-left: 2rem;
+}
+
+.incidents__header .filter__type .filter__tab:after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    bottom: -2px;
+}
+
+.incidents__header .filter__type .filter__tab:first-child:after {
+    width: 78px;
+}

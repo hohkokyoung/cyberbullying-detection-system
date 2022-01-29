@@ -1,0 +1,232 @@
+.management__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.management__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.management__header h2 {
+    font-size: 1.3em;
+}
+
+/* .management__header button {
+    padding: .4rem 1rem;
+} */
+
+.management__header .filter__search {
+    margin-right: 0;
+}
+
+.managements__outline {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 2rem;
+    /* background-color: red; */
+    /* align-items: center; */
+    /* width: 100%; */
+}
+
+.managements__outline .managements__actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: ". pagination edit-organisation";
+    /* justify-content: space-between; */
+}
+
+.managements__outline .managements__actions .button {
+    /* width: 20%; */
+    width: fit-content;
+    font-weight: 600;
+    padding: .8rem 2rem;
+    font-size: 1rem;
+}
+
+/* .managements__outline .managements__actions .button:nth-child(3) {
+} */
+
+.managements__outline .managements__actions .edit__organisation__button {
+    grid-area: edit-organisation;
+    justify-self: flex-end;
+}
+
+.managements__outline .managements__actions .pagination__container {
+    grid-area: pagination;
+}
+
+.managements {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.management {
+    /* background-color: var(--secondary-color); */
+    display: flex;
+    flex-direction: column;
+    /* height: 250px; */
+    /* height: 30%; */
+    /* height: 30vh; */
+
+    height: calc(100vh / 2 - 4vw - 3rem);
+
+    /* width: calc(((100vw - 18vw - 8vw) / 4) - 6rem); */
+    align-items: center;
+    justify-content: space-between;
+    /* border: 4px solid black; */
+    box-shadow: 0px 3px 4px lightgrey;
+    transition: .5s box-shadow ease-out;
+    position: relative;
+    /* border-left: 10px solid red; */
+    /* grid-gap: 2rem; */
+}
+
+.management > div:nth-child(1) {
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 100%;
+    position: relative;
+}
+
+.management img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -15vh;
+    margin: auto;
+    background-color: var(--grey-color);
+}
+
+.management > div:nth-child(2) {
+    /* height: calc(100vh / 2 - 4vw - 3rem - 15vh - 3 .6rem); */
+    height: 100%;
+}
+
+.management > div:nth-child(2) p:nth-child(1), .management--hidden p:nth-child(1) {
+    margin-top: 2.4rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.management > div:nth-child(2) p:nth-child(2), .management--hidden p:nth-child(2) {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* .managements__actions {
+    
+} */
+
+/* .management--flip {
+    position: relative;
+    height: calc(100vh / 2 - 4vw - 3rem);
+} */
+
+/* .management--flip {
+    position: relative;
+} */
+
+/* .management--hidden {
+    position: absolute;
+    top: 25%; */
+    /* width: 100%; */
+    /* -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg); */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* opacity: 0; */
+    /* transition: 1s opacity; */
+/* } */
+
+
+.management button {
+    width: 100%;
+    border-radius: 0;
+}
+
+.management:hover {
+    box-shadow: 0px 6px 8px var(--primary-color);
+}
+
+.management--add > div:nth-child(1) {
+    background: var(--primary-color);
+}
+
+.management--loading, .management--empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* .management--add > div:nth-child(1) img {
+    background: var(--grey-color);
+    width: 40px;
+    padding: 10px;
+} */
+
+.management__flip {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh / 2 - 4vw - 3rem);
+    justify-content: space-between;
+    align-items: none;
+    perspective: 1000px;
+}
+
+.management__flip--front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.management__flip--back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    gap: 2rem;
+    text-align: center;
+}
+
+.management__flip--back p {
+    /* padding: 0 1rem; */
+}
+
+.management__flip--inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0px 3px 4px lightgrey;
+}
+
+.management__flip:hover .management__flip--inner {
+    transform: rotateY(180deg);
+}
+
+/* .management__flip--back p {
+    
+} */
